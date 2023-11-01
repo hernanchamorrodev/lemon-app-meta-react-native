@@ -1,8 +1,13 @@
 import * as React from "react";
-import { View, StyleSheet } from "react-native";
+import { Alert, Image, StyleSheet, Text, TextInput, View } from "react-native";
+import Button from "../components/Button";
+import { validateEmail } from "../utils";
 
 const SubscribeScreen = () => {
   // Add subscribe screen code here
+  const [email, setEmail] = React.useState("");
+
+  const isEmailValid = validateEmail(email);
   return <View></View>;
 };
 
