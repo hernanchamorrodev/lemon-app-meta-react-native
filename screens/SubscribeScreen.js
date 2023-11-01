@@ -8,7 +8,33 @@ const SubscribeScreen = () => {
   const [email, setEmail] = React.useState("");
 
   const isEmailValid = validateEmail(email);
-  return <View></View>;
+  return (
+    <View style={styles.container}>
+      <Image
+        style={styles.logo}
+        source={require("../assets/little-lemon-logo-grey.png")}
+      />
+      <Text style={styles.title}>
+        Subscribe to our newsletter for our latest delicious recipes!
+      </Text>
+      <TextInput
+        style={styles.input}
+        value={email}
+        onChangeText={setEmail}
+        keyboardType="email-address"
+        textContentType="emailAddress"
+        placeholder={"Type your email"}
+      />
+      <Button
+        onPress={() => {
+          Alert.alert("Thanks for subscribing, stay tuned!");
+        }}
+        disabled={!isEmailValid}
+      >
+        Subscribe
+      </Button>
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
