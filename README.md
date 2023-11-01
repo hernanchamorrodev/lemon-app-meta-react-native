@@ -37,9 +37,6 @@ expo start
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-```
-
 ## Author
 
 Hernán Chamorro
-```
