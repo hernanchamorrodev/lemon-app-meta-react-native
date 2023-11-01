@@ -9,17 +9,9 @@ const RootNavigator = () => {
   return (
     <Stack.Navigator>
       {/* Welcome Screen */}
-      <Stack.Screen
-        name="Welcome"
-        component={WelcomeScreen}
-        options={{ headerShown: false }}
-      />
+      <Stack.Screen name="Welcome" component={WelcomeScreen} />
       {/* Subscribe Screen */}
-      <Stack.Screen
-        name="Subscribe"
-        component={SubscribeScreen}
-        options={{ headerShown: false }}
-      />
+      <Stack.Screen name="Subscribe" component={SubscribeScreen} />
     </Stack.Navigator>
   );
 };
